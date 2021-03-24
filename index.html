@@ -18,13 +18,13 @@
       body {
         font-family: 'Cormorant', serif;
         margin: 2em;
-        background-color: #EB393F
+        background-color: #000000
           ;
-        color: #FFF;
+        color: #FF0000;
         font-size: 1.2em;
       }
       h1 {
-        color: #FFF;
+        color: #FF0000;
       }
       #poem > div {
         height: 1.2em;
@@ -33,7 +33,7 @@
         padding-left: 1em;
       }
       .turtle {
-        color: green;
+        color: red;
       }
     </style>
   </head>
@@ -42,9 +42,9 @@
     <div id="poem"></div>
     <script>
       // set up the lists of words
-      const subjects = "you,I,we,they".split(","),
-        verbs = "run,walk,speak,drift,talk,whisper".split(","),
-        objects = "me,you,her,him,them".split(",");
+      const subjects = "Bill,Sookie,Tara,Pam,Jessica,Jason,Sam,Gran".split(","),
+        verbs = "lusts over,loathes,kills,murders,tongues,hits,bites".split(","),
+        objects = "Eric".split(",");
       // set up the counter
       let counter = 0;
 
@@ -64,7 +64,7 @@
           getRandomFromList(subjects) +
           " " +
           getRandomFromList(verbs) +
-          " to " +
+          " " +
           getRandomFromList(objects);
         const lineText = document.createTextNode(text);
         line.appendChild(lineText);
